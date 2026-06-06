@@ -1,0 +1,67 @@
+{
+  "welcome": "Hello {{username}}!",
+  "back": "Back",
+  "change-language": "Change Language",
+  "save-language": "Save Language",
+  "my-orders": "My orders",
+  "auth": {
+    "smart-e-commerce": "Smart E-Commerce",
+    "signup": "Create Account",
+    "email": "Email",
+    "username": "Username",
+    "password": "Password",
+    "name": "Name",
+    "phone": "Phone Number",
+    "address": "Address",
+    "city": "City",
+    "zip-code": "Zip Code",
+    "confirm-password": "Confirm Password",
+    "go-to-sign-up": "Don't have an account?",
+    "signup-now": "Sign up",
+    "go-to-sign-in": "Already have an account?",
+    "sign-in-now": "Sign in"
+  },
+  "input": {
+    "placeholder": {
+      "fullname": "Enter your full name",
+      "phone": "Enter your phone number",
+      "address": "Enter your address"
+    },
+    "errors": {
+      "fullname-required": "This fullname is required",
+      "fullname-min": "{{field}} must be at least {{value}} characters",
+      "fullname-max": "{{field}} must be at most {{value}} characters",
+      "fullname-matches": "{{field}} must be {{value}}"
+    }
+  },
+  "navigation": {
+    "home": "Home",
+    "cart": "Cart",
+    "profile": "Profile",
+    "orders": "Orders",
+    "language": "Language",
+    "logout": "Logout",
+    "checkout": "Checkout",
+    "payment": "Payment"
+  },
+  "checkout": {
+    "confirmOrder": "Confirm Order"
+  },
+  "cart": {
+    "subtotal": "Subtotal",
+    "shipping": "Shipping",
+    "total": "Total",
+    "tax": "Tax",
+    "emptyCart": "Your cart is empty",
+    "startShopping": "Start shopping to fill your cart with your favorite products!",
+    "explore-products": "Explore Products"
+  },
+  "orders": {
+    "order": "Order",
+    "order-date": "Order date",
+    "order-status": "Order status",
+    "track-order": "Track order",
+    "order-items": "Order items",
+    "order-total": "Order total"
+  }
+}

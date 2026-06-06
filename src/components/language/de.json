@@ -1,0 +1,67 @@
+{
+  "welcome": "Hallo {{username}}!",
+  "back": "Zurück",
+  "change-language": "Sprache ändern",
+  "save-language": "Sprache speichern",
+  "my-orders": "Meine Bestellungen",
+  "auth": {
+    "smart-e-commerce": "Smart E-Commerce",
+    "signup": "Konto erstellen",
+    "email": "E-Mail",
+    "username": "Benutzername",
+    "password": "Passwort",
+    "name": "Name",
+    "phone": "Telefonnummer",
+    "address": "Adresse",
+    "city": "Stadt",
+    "zip-code": "Postleitzahl",
+    "confirm-password": "Passwort bestätigen",
+    "go-to-sign-up": "Noch kein Konto?",
+    "signup-now": "Registrieren",
+    "go-to-sign-in": "Bereits ein Konto?",
+    "sign-in-now": "Anmelden"
+  },
+  "input": {
+    "placeholder": {
+      "fullname": "Geben Sie Ihren vollständigen Namen ein",
+      "phone": "Geben Sie Ihre Telefonnummer ein",
+      "address": "Geben Sie Ihre Adresse ein"
+    },
+    "errors": {
+      "fullname-required": "Der vollständige Name ist erforderlich",
+      "fullname-min": "{{field}} muss mindestens {{value}} Zeichen lang sein",
+      "fullname-max": "{{field}} darf höchstens {{value}} Zeichen lang sein",
+      "fullname-matches": "{{field}} muss {{value}} entsprechen"
+    }
+  },
+  "navigation": {
+    "home": "Startseite",
+    "cart": "Warenkorb",
+    "profile": "Profil",
+    "orders": "Bestellungen",
+    "language": "Sprache",
+    "logout": "Abmelden",
+    "checkout": "Zur Kasse",
+    "payment": "Zahlung"
+  },
+  "checkout": {
+    "confirmOrder": "Bestellung bestätigen"
+  },
+  "cart": {
+    "subtotal": "Zwischensumme",
+    "shipping": "Versand",
+    "total": "Gesamtsumme",
+    "tax": "Steuer",
+    "emptyCart": "Ihr Warenkorb ist leer",
+    "startShopping": "Beginnen Sie mit dem Einkaufen, um Ihren Warenkorb mit Ihren Lieblingsprodukten zu füllen!",
+    "explore-products": "Produkte entdecken"
+  },
+  "orders": {
+    "order": "Bestellung",
+    "order-date": "Bestelldatum",
+    "order-status": "Bestellstatus",
+    "track-order": "Bestellung verfolgen",
+    "order-items": "Bestellte Artikel",
+    "order-total": "Bestellwert"
+  }
+}

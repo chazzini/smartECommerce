@@ -1,0 +1,67 @@
+{
+  "welcome": "Привет, {{username}}!",
+  "back": "Назад",
+  "change-language": "Изменить язык",
+  "save-language": "Сохранить язык",
+  "my-orders": "Мои заказы",
+  "auth": {
+    "smart-e-commerce": "Smart E-Commerce",
+    "signup": "Создать аккаунт",
+    "email": "Электронная почта",
+    "username": "Имя пользователя",
+    "password": "Пароль",
+    "name": "Имя",
+    "phone": "Номер телефона",
+    "address": "Адрес",
+    "city": "Город",
+    "zip-code": "Почтовый индекс",
+    "confirm-password": "Подтвердите пароль",
+    "go-to-sign-up": "Нет аккаунта?",
+    "signup-now": "Зарегистрироваться",
+    "go-to-sign-in": "Уже есть аккаунт?",
+    "sign-in-now": "Войти"
+  },
+  "input": {
+    "placeholder": {
+      "fullname": "Введите ваше полное имя",
+      "phone": "Введите ваш номер телефона",
+      "address": "Введите ваш адрес"
+    },
+    "errors": {
+      "fullname-required": "Полное имя обязательно для заполнения",
+      "fullname-min": "Поле {{field}} должно содержать не менее {{value}} символов",
+      "fullname-max": "Поле {{field}} должно содержать не более {{value}} символов",
+      "fullname-matches": "Поле {{field}} должно соответствовать значению {{value}}"
+    }
+  },
+  "navigation": {
+    "home": "Главная",
+    "cart": "Корзина",
+    "profile": "Профиль",
+    "orders": "Заказы",
+    "language": "Язык",
+    "logout": "Выйти",
+    "checkout": "Оформить заказ",
+    "payment": "Оплата"
+  },
+  "checkout": {
+    "confirmOrder": "Подтвердить заказ"
+  },
+  "cart": {
+    "subtotal": "Промежуточный итог",
+    "shipping": "Доставка",
+    "total": "Итого",
+    "tax": "Налог",
+    "emptyCart": "Ваша корзина пуста",
+    "startShopping": "Начните делать покупки, чтобы заполнить корзину любимыми товарами!",
+    "explore-products": "Перейти к товарам"
+  },
+  "orders": {
+    "order": "Заказ",
+    "order-date": "Дата заказа",
+    "order-status": "Статус заказа",
+    "track-order": "Отследить заказ",
+    "order-items": "Товары в заказе",
+    "order-total": "Сумма заказа"
+  }
+}

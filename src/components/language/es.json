@@ -1,0 +1,67 @@
+{
+  "welcome": "¡Hola {{username}}!",
+  "back": "Volver",
+  "change-language": "Cambiar idioma",
+  "save-language": "Guardar idioma",
+  "my-orders": "Mis pedidos",
+  "auth": {
+    "smart-e-commerce": "Smart E-Commerce",
+    "signup": "Crear cuenta",
+    "email": "Correo electrónico",
+    "username": "Nombre de usuario",
+    "password": "Contraseña",
+    "name": "Nombre",
+    "phone": "Número de teléfono",
+    "address": "Dirección",
+    "city": "Ciudad",
+    "zip-code": "Código postal",
+    "confirm-password": "Confirmar contraseña",
+    "go-to-sign-up": "¿No tienes una cuenta?",
+    "signup-now": "Registrarse",
+    "go-to-sign-in": "¿Ya tienes una cuenta?",
+    "sign-in-now": "Iniciar sesión"
+  },
+  "input": {
+    "placeholder": {
+      "fullname": "Introduce tu nombre completo",
+      "phone": "Introduce tu número de teléfono",
+      "address": "Introduce tu dirección"
+    },
+    "errors": {
+      "fullname-required": "El nombre completo es obligatorio",
+      "fullname-min": "{{field}} debe tener al menos {{value}} caracteres",
+      "fullname-max": "{{field}} debe tener como máximo {{value}} caracteres",
+      "fullname-matches": "{{field}} debe ser {{value}}"
+    }
+  },
+  "navigation": {
+    "home": "Inicio",
+    "cart": "Carrito",
+    "profile": "Perfil",
+    "orders": "Pedidos",
+    "language": "Idioma",
+    "logout": "Cerrar sesión",
+    "checkout": "Pagar",
+    "payment": "Pago"
+  },
+  "checkout": {
+    "confirmOrder": "Confirmar pedido"
+  },
+  "cart": {
+    "subtotal": "Subtotal",
+    "shipping": "Envío",
+    "total": "Total",
+    "tax": "Impuestos",
+    "emptyCart": "Tu carrito está vacío",
+    "startShopping": "¡Empieza a comprar para llenar tu carrito con tus productos favoritos!",
+    "explore-products": "Explorar productos"
+  },
+  "orders": {
+    "order": "Pedido",
+    "order-date": "Fecha del pedido",
+    "order-status": "Estado del pedido",
+    "track-order": "Seguir pedido",
+    "order-items": "Artículos del pedido",
+    "order-total": "Total del pedido"
+  }
+}

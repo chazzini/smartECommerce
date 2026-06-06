@@ -1,0 +1,67 @@
+{
+  "welcome": "Bonjour {{username}} !",
+  "back": "Retour",
+  "change-language": "Changer de langue",
+  "save-language": "Enregistrer la langue",
+  "my-orders": "Mes commandes",
+  "auth": {
+    "smart-e-commerce": "Smart E-Commerce",
+    "signup": "Créer un compte",
+    "email": "E-mail",
+    "username": "Nom d'utilisateur",
+    "password": "Mot de passe",
+    "name": "Nom",
+    "phone": "Numéro de téléphone",
+    "address": "Adresse",
+    "city": "Ville",
+    "zip-code": "Code postal",
+    "confirm-password": "Confirmer le mot de passe",
+    "go-to-sign-up": "Vous n'avez pas de compte ?",
+    "signup-now": "S'inscrire",
+    "go-to-sign-in": "Vous avez déjà un compte ?",
+    "sign-in-now": "Se connecter"
+  },
+  "input": {
+    "placeholder": {
+      "fullname": "Entrez votre nom complet",
+      "phone": "Entrez votre numéro de téléphone",
+      "address": "Entrez votre adresse"
+    },
+    "errors": {
+      "fullname-required": "Le nom complet est obligatoire",
+      "fullname-min": "{{field}} doit contenir au moins {{value}} caractères",
+      "fullname-max": "{{field}} doit contenir au maximum {{value}} caractères",
+      "fullname-matches": "{{field}} doit correspondre à {{value}}"
+    }
+  },
+  "navigation": {
+    "home": "Accueil",
+    "cart": "Panier",
+    "profile": "Profil",
+    "orders": "Commandes",
+    "language": "Langue",
+    "logout": "Se déconnecter",
+    "checkout": "Passer à la caisse",
+    "payment": "Paiement"
+  },
+  "checkout": {
+    "confirmOrder": "Confirmer la commande"
+  },
+  "cart": {
+    "subtotal": "Sous-total",
+    "shipping": "Livraison",
+    "total": "Total",
+    "tax": "Taxe",
+    "emptyCart": "Votre panier est vide",
+    "startShopping": "Commencez vos achats pour remplir votre panier de vos produits préférés !",
+    "explore-products": "Découvrir les produits"
+  },
+  "orders": {
+    "order": "Commande",
+    "order-date": "Date de la commande",
+    "order-status": "Statut de la commande",
+    "track-order": "Suivre la commande",
+    "order-items": "Articles de la commande",
+    "order-total": "Total de la commande"
+  }
+}
