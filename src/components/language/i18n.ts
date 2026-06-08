@@ -26,7 +26,7 @@ const LANGUAGES = {
 
 i18n.use(initReactI18next).init({
   resources: LANGUAGES,
-  lng: "es",
+  lng: "en",
   fallbackLng: "en",
   defaultNS: "translation",
   ns: ["translation"],
