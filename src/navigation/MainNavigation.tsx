@@ -5,30 +5,39 @@ import AuthNavigation from "./AuthNavigation";
 import Checkout from "@/screens/cart/Checkout";
 import MyOrder from "@/screens/orders/MyOrder";
 import AsyncStorage from "@react-native-async-storage/async-storage";
-import { setUser } from "@/store/reducer/userSlice";
+import { clearUser, setUser } from "@/store/reducer/userSlice";
 import { useDispatch, useSelector } from "react-redux";
 import { useState } from "react";
 import { RootState } from "@/store/store";
 import { ActivityIndicator, View } from "react-native";
 import { AppColors } from "@/styles/colors";
+import { onAuthStateChanged } from "firebase/auth";
+import { auth } from "@/config/firebase";
 
 const Stack = createNativeStackNavigator();
 const MainNavigation = () => {
   const dispatch = useDispatch();
-  const { user, isLoading } = useSelector((state: RootState) => state.user);
-  const loadUser = async () => {
-    const user = await AsyncStorage.getItem("user-data");
-    console.log("stored user data", user);
-    if (user) {
-      dispatch(setUser(JSON.parse(user)));
-      return true;
-    }
-    return false;
-  };
 
-  useEffect(() => {
-    loadUser();
-  }, []);
+  const [isLoading, setIsLoading] = useState(true);
+  const [user, setUserData] = useState<Object | null>(null);
+
+  const unsubscribe = onAuthStateChanged(auth, (currentUser) => {
+    if (currentUser) {
+      console.log("current user", currentUser);
+      dispatch(
+        setUser({
+          uid: currentUser.uid,
+          name: currentUser.displayName || "",
+          email: currentUser.email || "",
+        }),
+      );
+      setUserData(currentUser);
+      setIsLoading(false);
+    } else {
+      dispatch(clearUser());
+      setIsLoading(false);
+    }
+  });
 
   if (isLoading) {
     return (

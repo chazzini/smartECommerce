@@ -5,6 +5,7 @@ import de from "./de.json";
 import es from "./es.json";
 import fr from "./fr.json";
 import ru from "./ru.json";
+import AsyncStorage from "@react-native-async-storage/async-storage";
 
 const LANGUAGES = {
   en: {
@@ -24,18 +25,36 @@ const LANGUAGES = {
   },
 };
 
-i18n.use(initReactI18next).init({
-  resources: LANGUAGES,
-  lng: "en",
-  fallbackLng: "en",
-  defaultNS: "translation",
-  ns: ["translation"],
-  react: {
-    useSuspense: false,
+const LANGUAGE_DETECTOR = {
+  type: "languageDetector",
+  async: true,
+  detect: async (callback: (lng: string) => void) => {
+    const language = await AsyncStorage.getItem("language");
+    if (language) {
+      callback(language);
+    } else {
+      callback("en");
+    }
   },
-  interpolation: {
-    escapeValue: false,
+  cacheUserLanguage: async (lng: string) => {
+    await AsyncStorage.setItem("language", lng);
   },
-});
+};
+
+i18n
+  .use(LANGUAGE_DETECTOR as any)
+  .use(initReactI18next)
+  .init({
+    resources: LANGUAGES,
+    fallbackLng: "en",
+    defaultNS: "translation",
+    ns: ["translation"],
+    react: {
+      useSuspense: false,
+    },
+    interpolation: {
+      escapeValue: false,
+    },
+  });
 
 export default i18n;
